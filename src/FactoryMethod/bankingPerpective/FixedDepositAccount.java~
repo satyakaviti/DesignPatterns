@@ -1,0 +1,23 @@
+package FactoryMethod.bankingPerpective;
+
+public class FixedDepositAccount extends BankAccount{
+    private int tenureInYears;
+    public FixedDepositAccount(String bankName, String accountNumber, double balance, int tenureInYears) {
+        super(bankName, accountNumber, balance,tenureInYears);
+        this.tenureInYears = tenureInYears;
+    }
+
+    @Override
+    public void withdraw(double amount) {
+        System.out.println("Withdrawal not allowed until maturity.");
+    }
+
+    @Override
+    public void deposit(double amount) {
+        System.out.println("Deposit not allowed after initial deposit.");
+    }
+
+    public int getTenureInYears() {
+        return tenureInYears;
+    }
+}

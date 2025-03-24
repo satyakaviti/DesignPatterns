@@ -1,0 +1,10 @@
+package FactoryMethod.baseExample;
+
+
+public class PizzaFactory {
+    public static Pizza createPizza(String type) {
+        if(type.equals("chesse")) return new CheesePizza();
+        else if(type.equals("pepperon")) return new PepperonPizza();
+        else throw new UnsupportedOperationException("Unsupported pizza type: " + type);
+    }
+}

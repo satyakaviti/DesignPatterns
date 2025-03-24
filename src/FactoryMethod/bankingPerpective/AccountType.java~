@@ -1,0 +1,4 @@
+package FactoryMethod.bankingPerpective;
+
+public enum AccountType {
+}

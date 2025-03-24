@@ -1,0 +1,4 @@
+package FactoryMethod.baseExample;
+
+public interface Pizza {
+}

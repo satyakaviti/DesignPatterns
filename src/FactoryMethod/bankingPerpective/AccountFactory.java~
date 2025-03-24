@@ -1,0 +1,9 @@
+package FactoryMethod.bankingPerpective;
+
+import java.util.Map;
+
+public class AccountFactory {
+    public static BankAccount createAccount(AccountType type, String bankName, String accountNumber, double balance, Map<String,Object> params){
+
+    }
+}

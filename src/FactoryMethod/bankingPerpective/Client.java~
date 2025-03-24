@@ -1,0 +1,11 @@
+package FactoryMethod.bankingPerpective;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class Client {
+    public static void main(String[] args) {
+        Map<String, Object> params = new HashMap<>();
+        params.put("tenureInyears", 2)
+    }
+}
